@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('poseidon')
+angular.module('beerfriend')
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/');
 
