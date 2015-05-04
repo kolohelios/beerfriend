@@ -5,12 +5,12 @@ angular.module('beerfriend')
 
   function Profile() {}
 
-  Profile.update = function(){
-    $http.put(nodeUrl + '/users').
-      success(function(response){
+  Profile.update = function(profile){
+    $http.post(nodeUrl + '/users', profile)
+      .success(function(response){
         console.log(response);
-      }).
-      error(function(error){
+      })
+      .error(function(error){
         console.log(error);
       });
   };
