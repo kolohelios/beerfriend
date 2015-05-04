@@ -1,0 +1,14 @@
+h3 Profile
+
+form(name='userProfileForm')
+  .form-group
+    label(for='name') Name
+    input.form-control(type='text' ng-model='user.name')
+  .form-group
+    label(for='favbeer') Favorite Beer
+    input.form-control(type='text' ng-model='user.favBeer')
+  .form-group
+    label(for='age') Age
+    input.form-control(type='number' ng-model='user.age')
+  .form-group
+    button.form-control.btn.btn-primary(ng-click='saveProfile(user)') Save Profile

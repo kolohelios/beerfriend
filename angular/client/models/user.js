@@ -18,5 +18,9 @@ angular.module('beerfriend')
     return $rootScope.afAuth.$unauth();
   };
 
+  User.oauth = function(provider){
+    return $rootScope.afAuth.$authWithOAuthPopup(provider);
+  };
+
   return User;
 });

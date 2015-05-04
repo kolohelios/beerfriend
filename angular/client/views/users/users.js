@@ -20,4 +20,9 @@ angular.module('beerfriend')
       });
     }
   };
+
+  $scope.oauth = function(provider){
+    User.oauth(provider);
+  };
+
 });
